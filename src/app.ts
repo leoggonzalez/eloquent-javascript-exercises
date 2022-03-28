@@ -9,8 +9,8 @@ app.get("/", (req, res) => {
   res.render("index", { title: "Hey", message: "Hello there" });
 });
 
-app.get("/chapter-1", (req, res) => {
-  res.render("chapter-1");
+app.get("/chapter-2", (req, res) => {
+  res.render("chapter-2");
 });
 
 app.listen(3000, () => {
