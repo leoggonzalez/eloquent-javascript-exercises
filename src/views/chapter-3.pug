@@ -1,0 +1,22 @@
+html
+  head
+    title Chapter 3
+  body
+    include ../shared/navbar.pug
+    header
+      h1 Chapter 3 - Functions
+      ul
+        li 
+          a(href="#minimum") Minimum
+    section#minimum
+      h2 Minimum
+      p The previous chapter introduced the standard function Math.min that returns its smallest argument. We can build something like that now. Write a function min that takes two arguments and returns their minimum.
+      .form-group
+        label First element: 
+        input#first
+      .form-group
+        label Second element: 
+        input#second
+
+script(type='text/javascript', src='/static/test.js')  
+      
