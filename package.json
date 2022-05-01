@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
-    "start": "nodemon ./src/app.ts",
+    "start": "node ./build/app.js",
+    "dev": "nodemon ./src/app.ts",
     "build": "tsc --project ./ && yarn build:static",
     "build:static": "ts-node -T ./scripts/static-build.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
