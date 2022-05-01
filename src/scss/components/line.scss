@@ -1,0 +1,12 @@
+@import "../general/variables.scss";
+
+.line {
+  display: flex;
+  gap: var(--spacing-md);
+
+  @each $key, $value in $sizes {
+    &--#{$key} {
+      gap: var(--spacing-#{$key});
+    }
+  }
+}

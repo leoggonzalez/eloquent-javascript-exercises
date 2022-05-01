@@ -1,12 +1,11 @@
 html
   head
     title= title
-    link(rel="stylesheet" href="/static/main.css")
-    meta(name="viewport" content="initial-scale=1, maximum-scale=1")
+    include ../shared/header.pug
   body
     .app
       include ../shared/navbar.pug
       .container
-        h1 
+        h1.heading.heading--1
           | This website contains solutions to the exercises in the 
           a(href="https://eloquentjavascript.net/" target="blank") eloquent javascript book

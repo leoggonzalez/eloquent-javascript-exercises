@@ -13,7 +13,7 @@ app.set("view engine", "pug");
 app.set("views", "./src/views");
 
 app.get("/", (_, res) => {
-  res.render("index", { title: "Hey", message: "Hello there" });
+  res.render("index", { title: "Eloquen Javascript Exercises" });
 });
 
 app.get("/chapter-2", chapter2Controller);
