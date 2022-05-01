@@ -1,0 +1,16 @@
+$sizes: (
+  "xxs": 4px,
+  "xs": 12px,
+  "sm": 16px,
+  "md": 24px,
+  "lg": 32px,
+  "xl": 48px,
+  "xxl": 64px,
+  "xxxl": 64px,
+);
+
+:root {
+  @each $size-name, $size-value in $sizes {
+    --spacing-#{$size-name}: #{$size-value};
+  }
+}

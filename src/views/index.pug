@@ -1,8 +1,12 @@
 html
   head
     title= title
+    link(rel="stylesheet" href="/static/main.css")
+    meta(name="viewport" content="initial-scale=1, maximum-scale=1")
   body
-    include ../shared/navbar.pug
-    h1 
-      | This website contains solutions to the exercises in the 
-      a(href="https://eloquentjavascript.net/" target="blank") eloquent javascript book
+    .app
+      include ../shared/navbar.pug
+      .container
+        h1 
+          | This website contains solutions to the exercises in the 
+          a(href="https://eloquentjavascript.net/" target="blank") eloquent javascript book
