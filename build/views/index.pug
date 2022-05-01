@@ -1,8 +1,11 @@
 html
   head
     title= title
+    include ../shared/header.pug
   body
-    include ../shared/navbar.pug
-    h1 
-      | This website contains solutions to the exercises in the 
-      a(href="https://eloquentjavascript.net/" target="blank") eloquent javascript book
+    .app
+      include ../shared/navbar.pug
+      .container
+        h1.heading.heading--1
+          | This website contains solutions to the exercises in the 
+          a(href="https://eloquentjavascript.net/" target="blank") eloquent javascript book

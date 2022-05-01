@@ -9,6 +9,7 @@
   "scripts": {
     "start": "node ./build/app.js",
     "dev": "nodemon ./src/app.ts & yarn scss",
+    "prod": "yarn build && yarn start",
     "scss": "sass --watch ./src/scss/main.scss ./src/public/main.css",
     "build": "tsc --project ./ && yarn build:static",
     "build:static": "ts-node -T ./scripts/static-build.ts",
