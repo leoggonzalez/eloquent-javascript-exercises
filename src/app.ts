@@ -3,6 +3,8 @@ import { chapter2Controller } from "./controllers/chapter_2_controller";
 import { chapter3Controller } from "./controllers/chapter_3_controller";
 import path from "path";
 
+const PORT = process.env.PORT || 3000;
+
 const app = express();
 
 app.use("/static", express.static(path.join(__dirname, "public")));
@@ -17,6 +19,6 @@ app.get("/", (_, res) => {
 app.get("/chapter-2", chapter2Controller);
 app.get("/chapter-3", chapter3Controller);
 
-app.listen(3000, () => {
-  console.log("Application is listening on port 3000!");
+app.listen(PORT, () => {
+  console.log(`Application is listening on port ${PORT}!`);
 });
